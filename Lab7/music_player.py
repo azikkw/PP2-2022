@@ -93,5 +93,3 @@ while done:
     
     
     pygame.display.flip()
-    
-pygame.quit()
