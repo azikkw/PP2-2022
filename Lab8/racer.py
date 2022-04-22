@@ -54,7 +54,7 @@ class Coin(pygame.sprite.Sprite):
         self.rect.x = randint(40, WIDTH - 40)
         
     def update(self):
-        self.rect.y += 7
+        self.rect.y += 10
         if self.rect.y > 800:
             self.reset_pos()
                     
