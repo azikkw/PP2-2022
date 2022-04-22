@@ -1,7 +1,6 @@
 #MUSIC PLAYER
 
-import pygame 
-import random
+import pygame
 
 pygame.init()
 
