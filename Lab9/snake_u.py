@@ -1,4 +1,5 @@
 
+
 import pygame 
 from random import randrange
 import time
@@ -142,6 +143,3 @@ while done:
     screen.blit(level_add, (140, 20))
             
     pygame.display.update()
-
-
-pygame.quit()

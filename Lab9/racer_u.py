@@ -120,6 +120,3 @@ while done:
         done = False
     
     pygame.display.update()
-    
-            
-pygame.quit()
