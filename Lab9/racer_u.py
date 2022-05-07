@@ -6,7 +6,6 @@ import time
 
 pygame.init()
 
-
 BACK = pygame.image.load("Lab8/image/road.png")
 WIDTH = 500
 HEIGHT = 800
@@ -108,7 +107,9 @@ while done:
             level += 1
             coin_speed += 3
             car_speed += 1.5
-        pygame.mixer.Sound('Lab8/music/coin.mp3').play()
+        sound = pygame.mixer.Sound("Lab8/music/coin.mp3")
+        pygame.mixer.Sound.play(sound)
+        #pygame.mixer.Sound('Lab8/music/coin.mp3').play()
         
     if level == 5:
         pygame.mixer.music.stop()
