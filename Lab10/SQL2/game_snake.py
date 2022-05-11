@@ -67,7 +67,10 @@ def pause():
                 if event.key == pygame.K_ESCAPE:
                     paused = False
                 if event.key == pygame.K_RETURN:
-                    add_user(user_name, str(level), str(score))
+                    if cnt != 1:
+                        add_user(user_name, str(level), str(score))
+                    else:
+                        update_user(already_level[0], str(level), str(score))
                     pygame.quit()
                     quit()
                     
